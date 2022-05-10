@@ -1,0 +1,33 @@
+form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+label, input[type=text], textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+input[type=text], textarea {
+  padding: 10px;
+  border: 1px solid #ffcc00;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+input[type=submit]:hover {
+  background-color: #bebebe;
+  color: white;
+  transition: .4s;
+}
