@@ -5,10 +5,10 @@
 
 function send_mail($email, $oggetto, $messaggio, $path_allegato = null){
         $mail = new PHPMailer();
-        $mail->IsSMTP();
-        $mail->Host = "smtp.gmail.com"; //indirizzo del server di posta in uscita
+        $mail->IsIMAP();
+        $mail->Host = "imap.gmail.com"; //indirizzo del server di posta in uscita
         $mail->SMTPDebug = 0;
-        $mail->Port = 465; //porta del server di posta in uscita
+        $mail->Port = 993; //porta del server di posta in uscita
  	    $mail->SMTPAuth = true;
         $mail->SMTPAutoTLS = false;
 	    $mail->SMTPSecure = 'ssl'; //tls o ssl informarsi presso il provider del vostro server di posta
