@@ -6,16 +6,16 @@
 function send_mail($email, $oggetto, $messaggio, $path_allegato = null){
         $mail = new PHPMailer();
         $mail->IsSMTP();
-        $mail->Host = "panel.freehosting.com"; //indirizzo del server di posta in uscita
+        $mail->Host = "smtp.gmail.com"; //indirizzo del server di posta in uscita
         $mail->SMTPDebug = 0;
         $mail->Port = 465; //porta del server di posta in uscita
  	    $mail->SMTPAuth = true;
         $mail->SMTPAutoTLS = false;
 	    $mail->SMTPSecure = 'ssl'; //tls o ssl informarsi presso il provider del vostro server di posta
-        $mail->Username = "lampnews"; //la vostra mail
-        $mail->Password = "qu5o99WF8e"; //password per accedere alla vostra mail
+        $mail->Username = "newstecnologiaofficial@gmail.com"; //la vostra mail
+        $mail->Password = "R1cc4rd0-LAMP-L0r3nz0-NEWS"; //password per accedere alla vostra mail
         $mail->Priority    = 1; //(1 = High, 3 = Normal, 5 = low)
-        $mail->setFrom('lampnews@lampnews.org', 'Lamp News'); //impostazione del mittente
+        $mail->setFrom('newstecnologiaofficial@gmail.com', 'Lamp News'); //impostazione del mittente
         $mail->AddAddress($email);
         $mail->IsHTML(true);
         $mail->Subject  =  $oggetto;
